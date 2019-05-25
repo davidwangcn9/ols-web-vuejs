@@ -7,7 +7,7 @@ import List from '@/page/List'
 import Detail from '@/page/Detail'
 import Account from '@/components/Account'
 import Task from '@/components/Task'
-
+import Train from '@/page/Train'
 Vue.use(Router)
 
 export default new Router({
@@ -39,10 +39,11 @@ export default new Router({
     {
       path: '/train',
       name:"train",
+      component: Train,
       children:[
         {
           path: '/',
-          name: 'list',
+          name: 'train',
           component: List
         },
         {
