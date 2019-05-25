@@ -2,12 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 import Vuex from 'vuex'
 import Element from 'element-ui'
 import storeBase from './store'
-
 import 'element-ui/lib/theme-chalk/index.css'
+import router from './router'
 
 Vue.use(Element)
 Vue.use(Vuex)

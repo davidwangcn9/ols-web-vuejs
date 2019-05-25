@@ -1,6 +1,6 @@
 <style type="scss">
 .train{
-  max-width:1200px;
+  max-width: 1130px;
   margin:auto;
 }
 </style>

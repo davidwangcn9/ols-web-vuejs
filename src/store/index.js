@@ -2,7 +2,7 @@ export default {
   state: {
     user: {
       userName: '',
-      token: ''
+      token: '123'
     }
   }
 }
