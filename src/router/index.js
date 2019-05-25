@@ -52,7 +52,7 @@ export default new Router({
           component: Create
         },
         {
-          path: 'train/detail',
+          path: 'detail',
           name: 'detail',
           component: Detail
         }

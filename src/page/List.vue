@@ -20,7 +20,7 @@
       </div>
       <template v-if="campList.length > 0">
         <div class="camp-card" v-for="(item, index) in campList" :key="index">
-          <router-link tag="div" :to="`/train/detail/${item.id}`">
+          <router-link tag="div" :to="{ path: 'detail', query: { id: item.id }}">
             <Card :item="item"></Card>
           </router-link>
         </div>

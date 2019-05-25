@@ -1,5 +1,6 @@
 <template>
   <div class="card">
+    <i class="el-icon-close icon-position"></i>
     <div class="title">{{ item.title }}</div>
     <div class="description">{{ item.description }}</div>
     <div class="created_time">{{ item.createTime }}</div>
@@ -37,6 +38,8 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin-bottom: 30px;
+    position: relative;
   }
   .card:hover {
     box-shadow: 0 0 10px 0 #00b4c5;
@@ -48,14 +51,26 @@
   }
 
   .description {
-    font-size: 18px;
+    font-size: 14px;
     color: #686868;
     margin: 26px 0 9px 0;
     flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    line-height: 20px;
   }
 
   .created_time {
     font-size: 14px;
+    color: #686868;
+  }
+
+  .icon-position {
+    position: absolute;
+    right: 30px;
+    top: 20px;
     color: #686868;
   }
 

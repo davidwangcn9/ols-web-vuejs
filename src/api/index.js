@@ -11,5 +11,8 @@ export default {
   },
   getCampList(params) {
     return http.get(`${API_BASE}/camps`, {params})
+  },
+  getCampDetail(id) {
+    return http.get(`${API_BASE}/camps/${id}`, {})
   }
 }
