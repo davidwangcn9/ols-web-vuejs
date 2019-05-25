@@ -5,6 +5,8 @@ import SignUp from '@/components/SignUp'
 import Create from '@/page/Create'
 import List from '@/page/List'
 import Detail from '@/page/Detail'
+import Account from '@/components/Account'
+import Task from '@/components/Task'
 
 Vue.use(Router)
 
@@ -12,28 +14,49 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'SignIn',
+      name: 'account',
+      component: Account
+    },{
+      path: '/account',
+      name: 'account',
+      component: Account
+    },
+    {
+      path: '/task',
+      name: 'task',
+      component: Task
+    },
+    {
+      path: '/signIn',
+      name: 'signIn',
       component: SignIn
     },
     {
       path: '/signup',
-      name: 'SignUp',
+      name: 'signUp',
       component: SignUp
     },
     {
-      path: '/create',
-      name: 'Create',
-      component: Create
+      path: '/train',
+      name:"train",
+      children:[
+        {
+          path: '/',
+          name: 'list',
+          component: List
+        },
+        {
+          path: 'create',
+          name: 'create',
+          component: Create
+        },
+        {
+          path: 'train/detail',
+          name: 'detail',
+          component: Detail
+        }
+      ]
     },
-    {
-      path: '/list',
-      name: 'List',
-      component: List
-    },
-    {
-      path: '/detail',
-      name: 'Detail',
-      component: Detail
-    }
+
   ]
 })
