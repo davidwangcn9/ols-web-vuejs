@@ -1,0 +1,5 @@
+{
+    "/api/camps": "/list",
+    "/api/camps/:id": "/item",
+    "/api/camp": "/create"
+}

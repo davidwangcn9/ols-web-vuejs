@@ -14,7 +14,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
+    "start": "npm run dev & json-server --watch ./mock/db.json --routes ./mock/routes.json",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
     "build": "node build/build.js"
