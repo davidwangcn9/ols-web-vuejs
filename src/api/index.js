@@ -1,11 +1,15 @@
-import $http from './http.js'
+import http from './http'
 
-const API_BASE = 'http://localhost:3000/api'
+const API_BASE = '/api'
+
 export default {
   login () {
-    return $http.post(`${API_BASE}/login`)
+    return http.post(`${API_BASE}/login`)
   },
   create(option) {
-    return $http.post(`${API_BASE}/camp`,option)
+    return http.post(`${API_BASE}/camp`, option)
+  },
+  getCampList(params) {
+    return http.get(`${API_BASE}/camps`, {params})
   }
 }
