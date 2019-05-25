@@ -1,7 +1,11 @@
 <style type="scss">
+.train{
+  max-width:1200px;
+  margin:auto;
+}
 </style>
 <template>
-  <div>
+  <div class="train">
     <router-view/>
   </div>
 </template>
