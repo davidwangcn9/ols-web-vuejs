@@ -1,8 +1,8 @@
-import Axios from 'axios'
+import axios from 'axios'
 import storeBase from './../store/'
 
-const ax = new Axios({
+const http = axios.create({
   headers: {'X-Requested-Token': storeBase.state.user.token}
 })
 
-export default ax
+export default http

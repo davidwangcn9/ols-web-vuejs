@@ -7,7 +7,7 @@ import Vuex from 'vuex'
 import Element from 'element-ui'
 import storeBase from './store'
 
-import 'element-ui/lib/theme-chalk/index.css'
+import './assets/element-variables.scss'
 
 Vue.use(Element)
 Vue.use(Vuex)

@@ -1,5 +1,7 @@
 {
     "/api/camps": "/list",
+    "/api/camps?query=": "/list",
+    "/api/camps?query=:query": "/list",
     "/api/camps/:id": "/item",
     "/api/camp": "/create"
 }

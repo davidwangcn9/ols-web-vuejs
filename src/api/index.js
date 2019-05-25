@@ -1,9 +1,12 @@
-import http from 'http'
+import http from './http'
 
 const API_BASE = '/api'
 
 export default {
   login () {
     return http.post(`${API_BASE}/login`)
+  },
+  getCampList(params) {
+    return http.get(`${API_BASE}/camps`, {params})
   }
 }
