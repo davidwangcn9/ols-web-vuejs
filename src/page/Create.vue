@@ -1,4 +1,4 @@
-<style type="scss">
+<style type="scss" scoped>
   .date-input{
     width:50px;
     width: 59px;
@@ -146,12 +146,13 @@
           api.create(opt).then(res=>{
             if(res) {
               this.$message.success( '恭喜你，这是一条成功消息');
+              this.$router.push({name:'train'})
             }else {
               this.$message.error('错了哦，这是一条错误消息');
             }
           })
         }else{
-          this.$message.error('表单严重不通过')
+          this.$message.error('表单验证不通过')
         }
       },
 
@@ -186,7 +187,7 @@
 
       },
       goback(){
-        this.$router.push({name:'train'})
+        this.resetForm("ruleForm");
       }
     },
     mounted() {
