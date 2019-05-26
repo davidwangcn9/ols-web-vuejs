@@ -171,7 +171,7 @@
         }
       },
       rightDate(date) {
-        let RegDate = /\d{4}-\d{1,2}-\d{1,2}/
+        let RegDate = /^\d{4,4}-\d{1,2}-\d{1,2}$/
         return RegDate.test(date) > 0
       },
       resetForm(formName) {
