@@ -2,8 +2,8 @@
   <div class="detail-container">
     <el-button type="text" class="back-button" @click="backToPreviousPage()">返回</el-button>
     <div class="title">{{ campDetail.title }}</div>
-    <div class="create-time">{{ campDetail.description }}</div>
     <div class="detail">{{ campDetail.createdTime }}</div>
+    <div class="create-time">{{ campDetail.description }}</div>
     <div class="task-container">
       <div class="card-list">
         <div v-for="(item, index) in taskDetail" :key="index" class="task-card">
@@ -31,7 +31,7 @@
     computed: {
       taskDetail() {
         const task = this.campDetail.tasks || []
-        return task.map(({title, description, createTime}) => ({title, description, createTime: `${createTime}开营`}))
+        return task.map(({title, description, createdTime}) => ({title, description, createTime: `${createdTime}开营`}))
       },
     },
     created() {

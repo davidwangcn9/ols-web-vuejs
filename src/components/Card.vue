@@ -43,6 +43,7 @@
   }
   .card:hover {
     box-shadow: 0 0 10px 0 #00b4c5;
+    cursor: pointer
   }
 
   .title {
