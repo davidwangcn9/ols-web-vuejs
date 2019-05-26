@@ -2,7 +2,7 @@
   <div class="detail-container">
     <el-button type="text" class="back-button" @click="backToPreviousPage()">返回</el-button>
     <div class="title">{{ campDetail.title }}</div>
-    <div class="detail">{{ campDetail.createdTime }}</div>
+    <div class="detail">{{ campDetail.startTime }}</div>
     <div class="create-time">{{ campDetail.description }}</div>
     <div class="task-container">
       <div class="card-list">
