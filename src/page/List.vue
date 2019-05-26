@@ -133,7 +133,6 @@ export default {
       }
       .camp-card {
         width: 33.333%;
-        margin-bottom: 30px;
       }
     }
   }
