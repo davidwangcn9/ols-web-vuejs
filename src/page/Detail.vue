@@ -31,7 +31,7 @@
     computed: {
       taskDetail() {
         const task = this.campDetail.tasks || []
-        return task.map(({title, description, createdTime}) => ({title, description, createTime: `${createdTime}开营`}))
+        return task.map(({title, description, createdTime}) => ({title, description, createTime: `${createdTime}创建`}))
       },
     },
     created() {
@@ -66,6 +66,7 @@
     font-size: 14px;
     color: #686868;
     margin: 16px 0;
+    margin-right: 650px;
   }
 
   .detail {
