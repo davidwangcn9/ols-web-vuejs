@@ -1,6 +1,7 @@
 <style type="scss" scoped>
   .out-container{
     display:block;
+    min-width:1200px;
   }
   .container{
     width:100%;
